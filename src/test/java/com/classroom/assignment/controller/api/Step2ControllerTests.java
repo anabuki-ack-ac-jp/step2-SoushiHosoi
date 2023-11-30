@@ -38,5 +38,4 @@ class Step2ControllerTests {
     this.mockMvc.perform(get("/step2/evening?name=テスト")).andDo(print()).andExpect(status().isOk())
         .andExpect(content().string(containsString("テストさん、こんばんは!")));
   }
-
 }
